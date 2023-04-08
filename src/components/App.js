@@ -6,7 +6,7 @@ const App = () => {
   const [newsData, setNewsData] = useState([]);
   const [loading, setLoading] = useState();
   const API_KEY = '88a5e95de52692e73f1f2a439dadc668';
-  const API_URL = `https://gnews.io/api/v4/top-headlines?category=${category}&apikey=[API_KEY]&max=10&lang=en`;
+  const API_URL = `https://gnews.io/api/v4/top-headlines?category=${category}&apikey=${API_KEY}&max=10&lang=en`;
 
  useEffect(()=>{
   setLoading(true);
